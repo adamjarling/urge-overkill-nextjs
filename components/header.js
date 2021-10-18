@@ -4,22 +4,34 @@ import Link from "next/link";
 import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import classNames from "classnames";
-import logo from "public/images/furbaby-and-ts-logo_white.png";
+import logo from "public/images/uo-logo-text-blue.png";
 import SocialMediaIcons from "components/social-media-icons";
 import Obfuscate from "react-obfuscate";
 
 const navLinks = [
   {
-    url: "/music",
-    label: "Music",
+    url: "/story",
+    label: "Story",
   },
   {
-    url: "/press",
-    label: "Press",
+    url: "/videos",
+    label: "Videos",
   },
   {
-    url: "/shows",
-    label: "Shows",
+    url: "/albums",
+    label: "Albums",
+  },
+  {
+    url: "/news",
+    label: "News",
+  },
+  {
+    url: "/tour",
+    label: "Tour",
+  },
+  {
+    url: "/contact",
+    label: "Contact",
   },
 ];
 
@@ -34,27 +46,34 @@ export default function Header() {
   return (
     <>
       <header
-        className={classNames(
-          [
-            "fixed",
-            "top-0",
-            "z-20",
-            "min-w-full",
-            "transition",
-            "duration-1000",
-          ],
-          {
-            "bg-black": isNavBg,
-            "bg-opacity-70": isNavBg,
-            "bg-opacity-0": !isNavBg,
-          }
-        )}
+        className={classNames([
+          "fixed",
+          "top-0",
+          "z-20",
+          "min-w-full",
+          "transition",
+          "duration-1000",
+          "bg-white",
+          "bg-opacity-80",
+        ])}
       >
-        <div className="flex justify-between items-center px-4 md:px-8">
+        <div className="flex justify-between items-center px-4 md:px-8 py-4">
+          <Link href="/">
+            <a className="relative border-none w-40 pt-1">
+              <Image
+                src={logo}
+                alt="UO logo"
+                layout="responsive"
+                width={1288}
+                height={129}
+              />
+            </a>
+          </Link>
+
           {/* Desktop nav */}
           <nav className="hidden lg:block text-sm uppercase">
             {navLinks.map(({ url, label }) => (
-              <span key={url} className="px-10">
+              <span key={url} className="px-6">
                 <Link href={url}>
                   <a className="border-none">{label}</a>
                 </Link>
@@ -73,27 +92,13 @@ export default function Header() {
             onClick={() => setActive(!active)}
           >
             <div className="tham-box">
-              <div className="tham-inner bg-gray-100" />
+              <div className="tham-inner bg-uo-blue" />
             </div>
-          </div>
-
-          <Link href="/">
-            <a className="relative border-none w-40 pt-1">
-              <Image
-                src={logo}
-                alt="Furbaby and the Tight Spaces"
-                layout="responsive"
-                width={1640}
-                height={1077}
-              />
-            </a>
-          </Link>
-
-          <div className="invisible w-0 h-0 md:visible md:w-auto md:h-auto text-2xl">
-            <SocialMediaIcons />
           </div>
         </div>
       </header>
+
+      {/** Overlay */}
       <nav
         className={names(
           [
@@ -104,7 +109,7 @@ export default function Header() {
             "ease-in-out",
             "h-screen",
             "w-screen",
-            "bg-black",
+            "bg-white",
             "text-3xl",
             "sm:text-5xl",
             "md:text-6xl",

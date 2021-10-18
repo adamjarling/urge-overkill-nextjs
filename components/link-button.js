@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const sharedClasses = [
-  "py-10 px-16 tracking-widest text-2xl uppercase inline-block border-2 text-center",
+  "py-10 px-16 tracking-widest text-2xl uppercase inline-block border-3 text-center",
 ];
 
 export default function LinkButton({ children, href, isInverted, isExternal }) {
@@ -22,7 +22,7 @@ export default function LinkButton({ children, href, isInverted, isExternal }) {
         target={isExternal ? `_blank` : undefined}
         className={`${[
           ...sharedClasses,
-        ]} bg-transparent hover:bg-gray-200 text-gray-100 font-sans hover:text-gray-900 border border-solid border-gray-200 hover:border-transparent`}
+        ]} bg-uo-blue hover:bg-transparent text-white font-sans hover:text-uo-blue border border-solid border-uo-blue `}
       >
         {children}
       </a>

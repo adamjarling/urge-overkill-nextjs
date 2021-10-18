@@ -4,6 +4,7 @@ import Link from "next/link";
 import Section from "components/section";
 import ExternalLink from "./external-link";
 import { distributors } from "social-media-manifest";
+import Obfuscate from "react-obfuscate";
 
 const footerSocials = [
   {
@@ -26,13 +27,12 @@ const footerSocials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black uppercase text-xl md:text-2xl">
+    <footer className="bg-uo-blue text-white uppercase text-xl md:text-2xl">
       <Section>
         <div className="flex flex-col md:flex-row pl-6 md:pl-12">
           <div className="pb-10 flex-1">
-            <Link href="mailto:furbabyferguson@gmail.com">
-              <a className="border-none">info@furbaby.rocks</a>
-            </Link>
+            <p>Contact:</p>
+            <Obfuscate email="melissa@c-ent.com">melissa@c-ent.com</Obfuscate>
           </div>
           <ul className="flex-1">
             {footerSocials.map((item) => (
