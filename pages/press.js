@@ -4,7 +4,6 @@ import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
-import BannerReggies from "components/banner-2021-10-08";
 import Link from "next/link";
 import { getSortedPostsData } from "lib/posts";
 import Date from "components/date";

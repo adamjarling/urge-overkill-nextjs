@@ -6,8 +6,6 @@ import ExternalLink from "components/external-link";
 import Section from "components/section";
 import LinkButton from "components/link-button";
 import Image from "next/image";
-import reggiesPoster from "public/images/Oct8SteepwaterIG.jpg";
-import BannerReggies from "components/banner-2021-10-08";
 
 const shows = [
   // {
@@ -82,12 +80,6 @@ export default function Shows() {
                 Buy Tickets
               </LinkButton>
             </div> */}
-              <div className="max-w-sm mt-8">
-                <Image src={reggiesPoster} />
-              </div>
-              <div className="pt-6">
-                <BannerReggies />
-              </div>
             </li>
             {shows.map((show) => (
               <li key={show.date} className="flex flex-col py-6 items-center">
