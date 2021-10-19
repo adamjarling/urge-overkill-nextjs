@@ -3,7 +3,7 @@ import Header from "components/header";
 import Image from "next/image";
 import Footer from "components/footer";
 
-export const siteTitle = "Furbaby & the Tight Spaces";
+export const siteTitle = "Urge Overkill";
 
 export default function Layout({ children, home }) {
   return (
@@ -23,9 +23,9 @@ export default function Layout({ children, home }) {
 
         <meta
           name="description"
-          content="FURBABY and the TIGHT SPACES is a garage rock band from Chicago, USA"
+          content="Urge Overkill is an American alternative rock band, formed in Chicago, Illinois, United States, consisting of Nash Kato (vocals/guitar), and Eddie King Roeser (vocals/guitar/bass guitar)"
         />
-        <meta property="og:image" content="/images/og-image-lava.png" />
+        <meta property="og:image" content="/images/uo-circle-logo-400px.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
