@@ -5,6 +5,8 @@ import Image from "next/image";
 import { getSortedPostsData } from "lib/posts";
 import Saturation25 from "components/saturation-25-anniversary";
 import Section from "components/section";
+import FreedomSingle from "components/freedom-single";
+import SplashOuiAlbum from "components/splash-oui-album";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -23,12 +25,12 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Urge Overkill</title>
       </Head>
-      <Section isCentered>
-        <Image src="/images/urge-logo-90s.png" width="800" height="310" />
-        <p>...coming soon</p>
-      </Section>
-      {/* <Splash1 photo={"UO_side-cropped.jpg"} />
-      <Saturation25 /> */}
+
+      <Splash1 photo={"DSC_0369_bw_lores.jpg"} />
+
+      <FreedomSingle />
+      <SplashOuiAlbum />
+      <Saturation25 />
     </Layout>
   );
 }

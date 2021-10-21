@@ -4,35 +4,35 @@ import Link from "next/link";
 import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import classNames from "classnames";
-import logo from "public/images/uo-logo-text-blue.png";
+import logo from "public/images/logo-uo1-header.png";
 import SocialMediaIcons from "components/social-media-icons";
 import Obfuscate from "react-obfuscate";
 
 const navLinks = [
+  // {
+  //   url: "/story",
+  //   label: "Story",
+  // },
+  // {
+  //   url: "/videos",
+  //   label: "Videos",
+  // },
   {
-    url: "/story",
-    label: "Story",
+    url: "/discography",
+    label: "Discography",
   },
-  {
-    url: "/videos",
-    label: "Videos",
-  },
-  {
-    url: "/albums",
-    label: "Albums",
-  },
-  {
-    url: "/news",
-    label: "News",
-  },
-  {
-    url: "/tour",
-    label: "Tour",
-  },
-  {
-    url: "/contact",
-    label: "Contact",
-  },
+  // {
+  //   url: "/news",
+  //   label: "News",
+  // },
+  // {
+  //   url: "/tour",
+  //   label: "Tour",
+  // },
+  // {
+  //   url: "/contact",
+  //   label: "Contact",
+  // },
 ];
 
 export default function Header() {
@@ -57,15 +57,15 @@ export default function Header() {
           "bg-opacity-80",
         ])}
       >
-        <div className="flex justify-between items-center px-4 md:px-8 py-4">
+        <div className="flex justify-between items-center px-4 md:px-8">
           <Link href="/">
             <a className="relative border-none w-40 pt-1">
               <Image
-                src={logo}
+                src="/images/UO-Logo-cropped.png"
                 alt="UO logo"
                 layout="responsive"
-                width={1288}
-                height={129}
+                width={1496}
+                height={576}
               />
             </a>
           </Link>
@@ -92,7 +92,7 @@ export default function Header() {
             onClick={() => setActive(!active)}
           >
             <div className="tham-box">
-              <div className="tham-inner bg-uo-blue" />
+              <div className="tham-inner bg-uo-black" />
             </div>
           </div>
         </div>

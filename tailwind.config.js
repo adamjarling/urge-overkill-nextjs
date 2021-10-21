@@ -15,8 +15,11 @@ module.exports = {
         "texture-pattern": "url('public/images/bg-animal.jpg')",
       }),
       colors: {
-        "uo-blue": "#182e3c",
-        "uo-orange": "#e55820",
+        "uo-dark-green": "#576c68",
+        "uo-green": "#92b4ad",
+        "uo-yellow": "#efeaba",
+        "uo-black": "#231f20",
+        "uo-orange": "#fa4d09",
       },
       spacing: {
         128: "32rem",

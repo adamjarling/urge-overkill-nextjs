@@ -11,7 +11,7 @@ function Splash1({ photo }) {
           image: `/images/${photo}`,
         },
       ]}
-      style={{ height: "60vh" }}
+      style={{ height: "80vh" }}
     >
       <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end items-end pb-6 px-6 md:pb-12 md:px-12 md:flex-row md:justify-between">
         {/* <Link href="/music">
@@ -19,7 +19,7 @@ function Splash1({ photo }) {
             Listen Now
           </a>
         </Link> */}
-        <h1 className="text-right">Super Sonic Story book</h1>
+        <h1 className="text-right text-white">U.R.G.E.</h1>
       </div>
     </ParallaxBanner>
   );
