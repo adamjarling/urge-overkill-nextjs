@@ -10,7 +10,7 @@ import ExternalLink from "components/external-link";
 import { FaSpotify, FaYoutube, FaApple, FaAmazon } from "react-icons/fa";
 import * as manifest from "music-release-manifest";
 
-export default function Music() {
+export default function Discography() {
   function isEvenRow(i) {
     return i % 2 > 0 && i !== 0;
   }
@@ -18,10 +18,10 @@ export default function Music() {
   return (
     <Layout>
       <Head>
-        <title>Music - Furbaby & the Tight Spaces</title>
+        <title>Discography - Urge Overkill</title>
       </Head>
 
-      <div className="pt-20 md:pt-36">
+      <div className="pt-10 ">
         <Section>
           {releases.map(({ src, title, manifestItems, year }, i) => (
             <div key={src} className="mb-24">
@@ -36,13 +36,8 @@ export default function Music() {
                   />
                 </ImageCalloutImage>
                 <ImageCalloutCallout isReversed={isEvenRow(i)}>
-                  <h2 className="pb-0 pt-8 md:p-0">{title}</h2>
-                  <p className="uppercase py-6 md:py-12">
-                    {title === "Furbaby and the Tight Spaces"
-                      ? "New Album!"
-                      : "Single"}{" "}
-                    - {year}
-                  </p>
+                  <h2 className="pb-0 pt-8 md:p-0 text-6xl">{title}</h2>
+                  <p className="uppercase py-6 md:py-12">Album - {year}</p>
                   <div className="flex flex-col md:flex-row justify-between">
                     <LinkButton isExternal href={manifestItems.spotify}>
                       <span className="flex items-center justify-center">
@@ -59,7 +54,7 @@ export default function Music() {
                     )}
                   </div>
 
-                  <div className="flex text-2xl mt-10 mb-6">
+                  {/* <div className="flex text-2xl mt-10 mb-6">
                     <ExternalLink url={manifestItems.youTubeMusic}>
                       <FaYoutube />
                     </ExternalLink>
@@ -73,7 +68,7 @@ export default function Music() {
                         <FaAmazon />
                       </ExternalLink>
                     )}
-                  </div>
+                  </div> */}
                 </ImageCalloutCallout>
               </ImageCalloutWrapper>
             </div>
@@ -86,59 +81,51 @@ export default function Music() {
 
 export const releases = [
   {
-    src: "furbaby-album-self-titled.jpg",
-    title: "Furbaby and the Tight Spaces",
-    manifestItems: manifest.furbabyAndTheTightSpaces_album1,
-    year: "2021",
+    src: "uo-oui-album-1200px.jpg",
+    title: "Oui",
+    manifestItems: manifest.oui,
+    year: "2022",
   },
   {
-    src: "give-u-everything-album-art-v1.jpg",
-    title: "I Can Only Give You Everything",
-    manifestItems: manifest.iCanOnlyGiveYouEverything,
-    year: "2020",
+    src: "rock-roll-submarine.jpg",
+    title: "Rock and Roll Submarine",
+    manifestItems: manifest.rnrSubmarine,
+    year: "2011",
   },
   {
-    src: "FURBABY-boxed-in-cover-art-no-outline.png",
-    title: "Boxed In",
-    manifestItems: manifest.boxedIn,
-    year: "2020",
+    src: "album-Exit-06.jpg",
+    title: "Exit the Dragon",
+    manifestItems: manifest.exitTheDragon,
+    year: "1995",
   },
   {
-    src: "cocoa-single-cover.jpg",
-    title: "Cocoa",
-    manifestItems: manifest.cocoa,
-    year: "2020",
+    src: "album-Saturarion-08.jpg",
+    title: "Saturation",
+    manifestItems: manifest.saturation,
+    year: "1993",
   },
   {
-    src: "waiting-album-art.jpg",
-    title: "Waiting",
-    manifestItems: manifest.waiting,
-    year: "2021",
+    src: "album-stull.jpg",
+    title: "Stull",
+    manifestItems: manifest.stull,
+    year: "1992",
   },
   {
-    src: "social-distance-album-art.jpg",
-    title: "Social Distance",
-    manifestItems: manifest.socialDistance,
-    year: "2021",
-  },
-
-  {
-    src: "next-year-album-art-v2-sharp.jpg",
-    title: "Next Year",
-    manifestItems: manifest.nextYear,
-    year: "2021",
+    src: "album-Storybook-04.jpg",
+    title: "The Supersonic Storybook",
+    manifestItems: manifest.storybook,
+    year: "1991",
   },
   {
-    src: "reaching-out-album-art-v2.jpg",
-    title: "Reaching Out (For Higher Ground)",
-    manifestItems: manifest.reachingOut,
-    year: "2020",
+    src: "album-AmeriJUS-02.jpg",
+    title: "Americruiser",
+    manifestItems: manifest.americruiser,
+    year: "1990",
   },
-
   {
-    src: "behind-the-door-cover-art-v2.jpg",
-    title: "Behind The Door",
-    manifestItems: manifest.behindTheDoor,
-    year: "2020",
+    src: "album-jesus-urge-superstar.jpg",
+    title: "Jesus Urge Superstar",
+    manifestItems: manifest.jesusUrgeSuperstar,
+    year: "1989",
   },
 ];

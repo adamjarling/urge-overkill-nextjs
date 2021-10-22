@@ -11,7 +11,7 @@
   h3,
   h4,
   h5 {
-    @apply text-uo-blue;
+    @apply text-uo-black;
   }
   h1,
   .big-title {
@@ -27,7 +27,7 @@
     @apply text-xl md:text-2xl py-4 font-sans font-semibold uppercase break-words;
   }
   h3.black {
-    @apply text-uo-blue;
+    @apply text-uo-black;
   }
   p {
     @apply pb-4 tracking-widest font-light leading-relaxed;

@@ -27,12 +27,14 @@ const footerSocials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-uo-blue text-white uppercase text-xl md:text-2xl">
+    <footer className="bg-uo-orange text-white uppercase text-xl md:text-2xl">
       <Section>
         <div className="flex flex-col md:flex-row pl-6 md:pl-12">
           <div className="pb-10 flex-1">
             <p>Contact:</p>
-            <Obfuscate email="melissa@c-ent.com">melissa@c-ent.com</Obfuscate>
+            <Obfuscate email="beth@bethwinermanagement.com">
+              beth@bethwinermanagement.com
+            </Obfuscate>
           </div>
           <ul className="flex-1">
             {footerSocials.map((item) => (

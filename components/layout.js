@@ -7,7 +7,7 @@ export const siteTitle = "Urge Overkill";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="text-uo-blue bg-white min-h-screen font-display font-light">
+    <div className="text-uo-black bg-white min-h-screen font-display font-light">
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,11 +29,11 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      {/* <Header /> */}
+      <Header />
 
       <main>{children}</main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
