@@ -9,7 +9,7 @@ export default function Layout({ children, home }) {
   return (
     <div className="text-uo-black bg-white min-h-screen font-display font-light">
       <Head>
-        <link rel="icon" href="/images/fur-512x512.png" />
+        <link rel="icon" href="/images/UO-Logo-hi-res.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

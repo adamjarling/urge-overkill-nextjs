@@ -22,7 +22,7 @@ function FreedomSingle() {
         </ParallaxBannerChildren>
       </ParallaxBanner>
       <div className="my-6 text-center">
-        <LinkButton href="https://www.newburycomics.com/collections/pre-orders/products/urge_overkill-saturation_exclusive_lp?variant=21259044454505">
+        <LinkButton href="https://open.spotify.com/album/7IizmPmKDGCwyAfaQkMwSz?si=7xMDx8-NTNipOnxngGFMHQ">
           Listen
         </LinkButton>
       </div>

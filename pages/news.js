@@ -20,12 +20,13 @@ export default function News({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>News - Furbaby & the Tight Spaces</title>
+        <title>News - Urge Overkill</title>
       </Head>
 
       <Section>
         <h2 className="mt-20">News</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+        <p>Coming soon...</p>
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
             <div key={id} className="bg-white text-black">
               <Link href={`posts/${id}`}>
@@ -45,7 +46,7 @@ export default function News({ allPostsData }) {
                 <p>
                   <Date dateString={date} />
                 </p>
-                {/* <p>{tagLine}</p> */}
+                
                 <Link href={`posts/${id}`}>
                   <a className="border-gray-800 inline-flex items-center text-gray-700 hover:text-black uppercase">
                     <span className="pr-3">Read More</span> <FaArrowRight />
@@ -54,7 +55,7 @@ export default function News({ allPostsData }) {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </Section>
     </Layout>
   );
