@@ -2,7 +2,6 @@ import React from "react";
 import LinkButton from "./link-button";
 import { ParallaxBanner } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
-import Section from "components/section";
 
 function SplashOuiAlbum() {
   return (
@@ -25,7 +24,7 @@ function SplashOuiAlbum() {
 
       <section className="flex flex-col items-center justify-center">
         <div className="max-w-screen-lg my-6 text-center">
-          <h2>First new album from Urge Overkill in a deacde.</h2>
+          <h2>First new album from Urge Overkill in a decade.</h2>
           <p>
             When the world was asked if it was time for new music from Urge
             Overkill, it responded with one word — <i>Oui</i>.
