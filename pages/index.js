@@ -26,11 +26,10 @@ export default function Home({ allPostsData }) {
         <title>Urge Overkill</title>
       </Head>
 
-      <Splash1 photo={"DSC_0369_bw_lores.jpg"} />
+      <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
 
       <FreedomSingle />
       <SplashOuiAlbum />
-      <Saturation25 />
     </Layout>
   );
 }
