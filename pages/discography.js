@@ -39,19 +39,21 @@ export default function Discography() {
                   <h2 className="pb-0 pt-8 md:p-0 text-6xl">{title}</h2>
                   <p className="uppercase py-6 md:py-12">Album - {year}</p>
                   <div className="flex flex-col md:flex-row justify-between">
-                    <LinkButton isExternal href={manifestItems.spotify}>
-                      <span className="flex items-center justify-center">
-                        <FaSpotify /> <span className="pl-3">Listen</span>
-                      </span>
-                    </LinkButton>
-                    {title === "Furbaby and the Tight Spaces" && (
+                    {title === "Oui" && (
                       <LinkButton
                         isExternal
-                        href="https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces"
+                        href="http://omnivorerecordings.com/shop/oui/"
                       >
                         Order Now!
                       </LinkButton>
                     )}
+                    <div className="ml-2">
+                      <LinkButton isExternal href={manifestItems.spotify}>
+                        <span className="flex items-center justify-center">
+                          <FaSpotify /> <span className="pl-3">Listen</span>
+                        </span>
+                      </LinkButton>
+                    </div>
                   </div>
 
                   {/* <div className="flex text-2xl mt-10 mb-6">

@@ -17,7 +17,9 @@ function FreedomSingle() {
       >
         <ParallaxBannerChildren>
           <h2 className="text-black bg-white text-center">
-            New Single "Necessary Evil"
+            New Single
+            <br />
+            "A Necessary Evil"
           </h2>
         </ParallaxBannerChildren>
       </ParallaxBanner>
