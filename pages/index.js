@@ -5,7 +5,7 @@ import Image from "next/image";
 import { getSortedPostsData } from "lib/posts";
 import Saturation25 from "components/saturation-25-anniversary";
 import Section from "components/section";
-import FreedomSingle from "components/freedom-single";
+import NewSingle from "components/new-single";
 import SplashOuiAlbum from "components/splash-oui-album";
 
 export async function getStaticProps() {
@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
 
       <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
 
-      <FreedomSingle />
+      <NewSingle />
       <SplashOuiAlbum />
     </Layout>
   );

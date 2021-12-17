@@ -19,12 +19,12 @@ function FreedomSingle() {
           <h2 className="text-black bg-white text-center">
             New Single
             <br />
-            "A Necessary Evil"
+            "How Sweet the Light"
           </h2>
         </ParallaxBannerChildren>
       </ParallaxBanner>
       <div className="my-6 text-center">
-        <LinkButton href="https://open.spotify.com/album/0K9jd9HG4f9EkRJvwJj6IU?si=9ygyhe49SSSCYjCtpbGH3Q">
+        <LinkButton href="https://open.spotify.com/album/4oCKPUqaHOflsgjEbpvCBq?si=igi__1kMRreVirJpoFJGxg">
           Listen
         </LinkButton>
       </div>
