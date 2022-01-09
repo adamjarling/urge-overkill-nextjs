@@ -19,7 +19,7 @@ function FreedomSingle() {
           <h2 className="text-black bg-white text-center">
             New Single
             <br />
-            "Unforgiven"
+            "Forgiven"
           </h2>
         </ParallaxBannerChildren>
       </ParallaxBanner>
