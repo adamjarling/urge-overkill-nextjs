@@ -25,6 +25,7 @@ function SplashOuiAlbum() {
       <section className="flex flex-col items-center justify-center">
         <div className="max-w-screen-lg my-6 text-center">
           <h2>First new album from Urge Overkill in a decade.</h2>
+          <h3>Out Now!</h3>
           <p>
             When the world was asked if it was time for new music from Urge
             Overkill, it responded with one word — <i>Oui</i>.
@@ -36,7 +37,7 @@ function SplashOuiAlbum() {
             for far too long.
           </p>
           <LinkButton isExternal href="http://omnivorerecordings.com/shop/oui/">
-            Pre-Order Now
+            Buy Album
           </LinkButton>
         </div>
       </section>

@@ -7,6 +7,7 @@ import Saturation25 from "components/saturation-25-anniversary";
 import Section from "components/section";
 import NewSingle from "components/new-single";
 import SplashOuiAlbum from "components/splash-oui-album";
+import SplashMerchStore from "components/splash-merch-store";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -27,18 +28,10 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
+      <SplashOuiAlbum />
 
       <NewSingle />
-      <SplashOuiAlbum />
+      <SplashMerchStore />
     </Layout>
   );
 }
-
-// // This gets called on every request
-// export async function getServerSideProps() {
-//   const index = getRandomInt(2);
-//   const photo = bgImages[index];
-
-//   // Pass data to the page via props
-//   return { props: { photo } };
-// }
