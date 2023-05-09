@@ -1,12 +1,12 @@
-import React from "react";
-import names from "classnames";
-import Link from "next/link";
 import Image from "next/image";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import Link from "next/link";
+import Obfuscate from "react-obfuscate";
+import React from "react";
+import SocialMediaIcons from "components/social-media-icons";
 import classNames from "classnames";
 import logo from "public/images/logo-uo1-header.png";
-import SocialMediaIcons from "components/social-media-icons";
-import Obfuscate from "react-obfuscate";
+import names from "classnames";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const navLinks = [
   // {
@@ -57,25 +57,23 @@ export default function Header() {
           "bg-opacity-80",
         ])}
       >
-        <div className="flex justify-between items-center px-4 md:px-8">
+        <div className="relative flex items-center justify-between w-40 px-4 pt-1 border-none md:px-8">
           <Link href="/">
-            <a className="relative border-none w-40 pt-1">
-              <Image
-                src="/images/UO-Logo-cropped.png"
-                alt="UO logo"
-                layout="responsive"
-                width={1496}
-                height={576}
-              />
-            </a>
+            <Image
+              src="/images/UO-Logo-cropped.png"
+              alt="UO logo"
+              layout="responsive"
+              width={1496}
+              height={576}
+            />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:block text-sm uppercase">
+          <nav className="hidden text-sm uppercase lg:block">
             {navLinks.map(({ url, label }) => (
               <span key={url} className="px-6">
-                <Link href={url}>
-                  <a className="border-none">{label}</a>
+                <Link href={url} className="border-none">
+                  {label}
                 </Link>
               </span>
             ))}
@@ -130,8 +128,8 @@ export default function Header() {
         <div className="flex flex-col items-center justify-center h-full">
           <ul className="">
             {navLinks.map((nl) => (
-              <li key={nl.label} className="py-5 sm:py-8 font-sans uppercase">
-                <Link href={nl.url}>
+              <li key={nl.label} className="py-5 font-sans uppercase sm:py-8">
+                <Link href={nl.url} legacyBehavior>
                   <a className="border-none">{nl.label}</a>
                 </Link>
               </li>
@@ -139,7 +137,7 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="flex items-center justify-center w-full text-2xl mb-12 absolute bottom-0">
+        <div className="absolute bottom-0 flex items-center justify-center w-full mb-12 text-2xl">
           <SocialMediaIcons />
         </div>
       </nav>

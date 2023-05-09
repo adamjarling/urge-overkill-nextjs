@@ -14,7 +14,7 @@ export default function LinkButton({
 }) {
   if (isTransparent) {
     return (
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <a
           target={isExternal ? `_blank` : undefined}
           className={`${[
@@ -29,7 +29,7 @@ export default function LinkButton({
 
   if (isPrimary) {
     return (
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <a
           target={isExternal ? `_blank` : undefined}
           className={`${[
@@ -43,7 +43,7 @@ export default function LinkButton({
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <a
         target={isExternal ? `_blank` : undefined}
         className={`${[
