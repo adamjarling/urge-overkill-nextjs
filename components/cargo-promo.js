@@ -1,5 +1,5 @@
 import Section from "components/section";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ExternalLink from "components/external-link";
 import FandTS from "components/f-and-ts";
 import LinkButton from "./link-button";

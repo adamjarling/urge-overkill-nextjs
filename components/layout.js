@@ -1,26 +1,14 @@
+import Footer from "components/footer";
 import Head from "next/head";
 import Header from "components/header";
-import Image from "next/image";
-import Footer from "components/footer";
+import Image from "next/legacy/image";
 
 export const siteTitle = "Urge Overkill";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="text-uo-black bg-white min-h-screen font-display font-light">
+    <div className="min-h-screen font-light bg-white text-uo-black font-display">
       <Head>
-        <link rel="icon" href="/images/UO-Logo-hi-res.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-          rel="stylesheet"
-        />
-
         <meta
           name="description"
           content="Urge Overkill is an American alternative rock band, formed in Chicago, Illinois, United States, consisting of Nash Kato (vocals/guitar), and Eddie King Roeser (vocals/guitar/bass guitar)"

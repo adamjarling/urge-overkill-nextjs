@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import Obfuscate from "react-obfuscate";
 import React from "react";
 import SocialMediaIcons from "components/social-media-icons";
 import classNames from "classnames";
-import logo from "public/images/logo-uo1-header.png";
+import logo from "public/images/UO-Logo-cropped.png";
 import names from "classnames";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
@@ -59,13 +59,7 @@ export default function Header() {
       >
         <div className="relative flex items-center justify-between w-40 px-4 pt-1 border-none md:px-8">
           <Link href="/">
-            <Image
-              src="/images/UO-Logo-cropped.png"
-              alt="UO logo"
-              layout="responsive"
-              width={1496}
-              height={576}
-            />
+            <Image src={logo} alt="UO logo" width={1496} height={576} />
           </Link>
 
           {/* Desktop nav */}

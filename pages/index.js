@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Layout from "components/layout";
 import NewSingle from "components/new-single";
 import Saturation from "public/images/UO - Saturation 30th Anniversary Artwork .png";

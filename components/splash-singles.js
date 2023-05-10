@@ -1,6 +1,6 @@
 import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import * as manifest from "music-release-manifest";
 import { FaSpotify, FaAmazon, FaYoutube, FaApple } from "react-icons/fa";
 import ExternalLink from "components/external-link";
