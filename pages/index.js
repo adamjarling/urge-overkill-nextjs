@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Layout from "components/layout";
 import NewSingle from "components/new-single";
 import Saturation from "public/images/UO - Saturation 30th Anniversary Artwork .png";
@@ -31,7 +31,13 @@ export default function Home({ allPostsData }) {
       <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
 
       <div>
-        <Image src={Saturation} alt="Saturation 30th Anniversary" />
+        <Image
+          src={Saturation}
+          alt="Saturation 30th Anniversary"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className="max-w-screen-lg mx-auto my-6 text-center">
         <h2>HAPPY 30TH ANNIVERSARY TO SATURATION</h2>

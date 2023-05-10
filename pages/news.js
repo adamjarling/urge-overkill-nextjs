@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "components/layout";
 import { getSortedPostsData } from "lib/posts";
 import Section from "components/section";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Date from "components/date";

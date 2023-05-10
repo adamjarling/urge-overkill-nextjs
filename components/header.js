@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import Obfuscate from "react-obfuscate";
 import React from "react";
@@ -57,9 +57,22 @@ export default function Header() {
           "bg-opacity-80",
         ])}
       >
-        <div className="relative flex items-center justify-between w-40 px-4 pt-1 border-none md:px-8">
+        <div className="relative flex items-center justify-between w-40 w-full px-4 pt-1 border-none md:px-8">
           <Link href="/">
-            <Image src={logo} alt="UO logo" width={1496} height={576} />
+            {/* <Image
+              src={logo}
+              alt="UO logo"
+              className="h-16"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
+            /> */}
+            <img
+              src={`/images/UO-Logo-cropped.png`}
+              alt="UO logo"
+              className="h-16"
+            />
           </Link>
 
           {/* Desktop nav */}

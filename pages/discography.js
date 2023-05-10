@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Section from "components/section";
 import LinkButton from "components/link-button";
 import ImageCalloutWrapper from "components/image-callout/wrapper";
@@ -30,10 +30,13 @@ export default function Discography() {
                   <Image
                     src={`/images/${src}`}
                     alt={title}
-                    layout="responsive"
                     width={500}
                     height={500}
-                  />
+                    sizes="100vw"
+                    style={{
+                      width: "100%",
+                      height: "auto"
+                    }} />
                 </ImageCalloutImage>
                 <ImageCalloutCallout isReversed={isEvenRow(i)}>
                   <h2 className="pb-0 pt-8 md:p-0 text-6xl">{title}</h2>

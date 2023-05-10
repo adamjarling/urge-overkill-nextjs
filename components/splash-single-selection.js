@@ -1,5 +1,5 @@
 import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const singles = [
@@ -33,9 +33,11 @@ export default function SplashSingleSelection() {
                     <Image
                       src={`/images/${single.src}`}
                       alt={single.title}
-                      layout="fill"
-                      objectFit="cover"
-                    />
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover"
+                      }} />
                   </a>
                 </Link>
               </div>

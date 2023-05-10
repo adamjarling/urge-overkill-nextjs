@@ -2,7 +2,7 @@ import React from "react";
 import ImageCalloutWrapper from "components/image-callout/wrapper";
 import ImageCalloutImage from "components/image-callout/image";
 import ImageCalloutCallout from "components/image-callout/callout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { releases } from "pages/music";
 import LinkButton from "./link-button";
 
@@ -17,10 +17,13 @@ export default function LatestSingle() {
         <Image
           src={`/images/${latestSingle.src}`}
           alt={latestSingle.title}
-          layout="responsive"
           width={500}
           height={500}
-        />
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto"
+          }} />
       </ImageCalloutImage>
       <ImageCalloutCallout>
         <p className="uppercase py-6">Latest Single</p>

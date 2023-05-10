@@ -2,7 +2,7 @@ import Layout from "components/layout";
 import { getAllPostIds, getPostData } from "lib/posts";
 import Head from "next/head";
 import Date from "components/date";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Section from "components/section";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
@@ -63,11 +63,13 @@ export default function Post({ postData, allPostsData }) {
         <Image
           src={`/images/posts/${postData.coverImage}`}
           alt={postData.title}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
           className="z-0 opacity-30"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center"
+          }} />
         <p className="text-center z-1">
           <Date dateString={postData.date} />
         </p>
