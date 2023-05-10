@@ -1,10 +1,11 @@
 //import 'tailwindcss/tailwind.css'
 import "styles/styles.css";
+
+import * as ga from "lib/ga";
+
 import { ParallaxProvider } from "react-scroll-parallax";
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as ga from "lib/ga";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -22,9 +23,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ParallaxProvider>
-      <SimpleReactLightbox>
-        <Component {...pageProps} />
-      </SimpleReactLightbox>
+      <Component {...pageProps} />
     </ParallaxProvider>
   );
 }

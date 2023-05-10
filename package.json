@@ -22,7 +22,6 @@
     "react-scroll-parallax": "^3.4.2",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2",
-    "simple-react-lightbox": "^3.6.9-0",
     "tailwind-hamburgers": "^1.0.2"
   },
   "devDependencies": {
