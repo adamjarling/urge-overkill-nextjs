@@ -3,25 +3,11 @@ import Image from "next/image";
 import Layout from "components/layout";
 import NewSingle from "components/new-single";
 import Saturation from "public/images/UO - Saturation 30th Anniversary Artwork .png";
-import Saturation25 from "components/saturation-25-anniversary";
-import Section from "components/section";
 import Splash1 from "components/splash1";
 import SplashMerchStore from "components/splash-merch-store";
 import SplashOuiAlbum from "components/splash-oui-album";
-import { getSortedPostsData } from "lib/posts";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
-  const thePost = allPostsData[0];
-
+export default function Home({}) {
   return (
     <Layout>
       <Head>
@@ -36,8 +22,9 @@ export default function Home({ allPostsData }) {
           alt="Saturation 30th Anniversary"
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </div>
       <div className="max-w-screen-lg mx-auto my-6 text-center">
         <h2>HAPPY 30TH ANNIVERSARY TO SATURATION</h2>
