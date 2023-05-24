@@ -54,7 +54,7 @@ export default function Home({}) {
         </p>
 
         <p>
-          Now available for to order in our{" "}
+          Now available to order in our{" "}
           <a
             href="https://www.hellomerch.com/collections/urge-overkill"
             target="_blank"

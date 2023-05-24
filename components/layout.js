@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
       <Head>
         <meta
           name="description"
-          content="Urge Overkill is an American alternative rock band, formed in Chicago, Illinois, United States, consisting of Nash Kato (vocals/guitar), and Eddie King Roeser (vocals/guitar/bass guitar)"
+          content="Urge Overkill is an American alternative rock band, formed in Evanston, Illinois, United States, consisting of the double guitar/vocals attack of Nash Kato and Eddie 'King' Roeser."
         />
         <meta property="og:image" content="/images/uo-circle-logo-400px.png" />
         <meta name="og:title" content={siteTitle} />
