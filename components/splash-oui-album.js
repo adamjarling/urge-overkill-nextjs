@@ -1,7 +1,7 @@
-import React from "react";
 import LinkButton from "./link-button";
 import { ParallaxBanner } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
+import React from "react";
 
 function SplashOuiAlbum() {
   return (
@@ -17,13 +17,13 @@ function SplashOuiAlbum() {
       >
         <ParallaxBannerChildren>
           <div className="flex flex-col items-center">
-            <h2 className="text-white text-center">Oui</h2>
+            <h2 className="text-center text-white">Oui</h2>
           </div>
         </ParallaxBannerChildren>
       </ParallaxBanner>
 
       <section className="flex flex-col items-center justify-center">
-        <div className="max-w-screen-lg my-6 text-center">
+        <div className="max-w-screen-lg px-2 my-6 text-center">
           <h2>First new album from Urge Overkill in a decade.</h2>
           <h3>Out Now!</h3>
           <p>
