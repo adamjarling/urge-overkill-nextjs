@@ -43,29 +43,19 @@ export default function Home({}) {
         </p>
 
         <p>
-          Celebrate this anniversary by ordering our remastered{" "}
-          <a
-            href="https://porterhouserecords.com/store/UO/saturation.html"
-            target="_blank"
-          >
-            Yellow Vinyl Variant
-          </a>{" "}
-          through Porterhouse.
-        </p>
-
-        <p>
-          Now available to order in our{" "}
+          Celebrate this anniversary by ordering our our classic UO Ball and
+          Catch The Fever t-shirts! Now available for{" "}
           <a
             href="https://www.hellomerch.com/collections/urge-overkill"
             target="_blank"
           >
-            US store
+            pre-order
           </a>
-          !
+          .
         </p>
       </div>
 
-      <div className="pb-12 place-content-center">
+      <div className="flex flex-col items-center justify-center pb-12">
         <a
           href="https://www.hellomerch.com/collections/urge-overkill"
           target="_blank"
