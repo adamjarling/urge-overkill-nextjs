@@ -43,8 +43,8 @@ export default function Home({}) {
         </p>
 
         <p>
-          Celebrate this anniversary by ordering our our classic UO Ball and
-          Catch The Fever t-shirts! Now available for{" "}
+          Celebrate this anniversary by ordering our classic UO Ball and Catch
+          The Fever t-shirts! Now available for{" "}
           <a
             href="https://www.hellomerch.com/collections/urge-overkill"
             target="_blank"
