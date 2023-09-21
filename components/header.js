@@ -21,10 +21,10 @@ const navLinks = [
     url: "/discography",
     label: "Discography",
   },
-  // {
-  //   url: "/news",
-  //   label: "News",
-  // },
+  {
+    url: "/store",
+    label: "Store",
+  },
   // {
   //   url: "/tour",
   //   label: "Tour",
