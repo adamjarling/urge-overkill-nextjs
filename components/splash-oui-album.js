@@ -5,7 +5,7 @@ import React from "react";
 
 function SplashOuiAlbum() {
   return (
-    <div>
+    <div className="mb-20">
       <ParallaxBanner
         layers={[
           {

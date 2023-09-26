@@ -73,8 +73,7 @@ export default function Home({}) {
 
       <SplashOuiAlbum />
 
-      <NewSingle />
-      <SplashMerchStore />
+      {/* <NewSingle /> */}
     </Layout>
   );
 }
