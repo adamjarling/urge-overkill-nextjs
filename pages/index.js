@@ -1,3 +1,4 @@
+import { ExternalLink } from "zuma-blocks";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "components/layout";
@@ -7,6 +8,7 @@ import Saturation from "public/images/UO - Saturation 30th Anniversary(1).png";
 import Splash1 from "components/splash1";
 import SplashMerchStore from "components/splash-merch-store";
 import SplashOuiAlbum from "components/splash-oui-album";
+import StullEP from "public/images/Stull_EP_Website_Banner_2240x1260.png";
 
 export default function Home({}) {
   return (
@@ -18,10 +20,43 @@ export default function Home({}) {
       <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
 
       <div>
-        <a
-          href="https://porterhouserecords.com/store/UO/saturation.html"
-          target="_blank"
-        >
+        <ExternalLink href="https://store.touchandgorecords.com/products/urge-overkill-stull-10-red-vinyl">
+          <Image
+            src={StullEP}
+            alt="Stull EP Reissue"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
+        </ExternalLink>
+        <div className="max-w-screen-lg px-2 mx-auto my-6 text-center">
+          <h2>
+            STULL EP
+            <br />
+            LIMITED EDITION RED VINYL
+          </h2>
+
+          <p>
+            Online store exclusive! Thirty years since its original release in
+            1992 and almost that long since Uma Thurman famously lip-synced to
+            the band&apos;s now iconic cover of “Girl, You&apos;ll Be A Woman
+            Soon,” we are pleased to reissue the long out-of-print Stull 10” EP
+            on LIMITED EDITION RED VINYL! Only 300 copies pressed!
+          </p>
+
+          <p>
+            Order now on{" "}
+            <ExternalLink href="https://store.touchandgorecords.com/products/urge-overkill-stull-10-red-vinyl">
+              Touch and Go
+            </ExternalLink>
+            .
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <ExternalLink href="https://porterhouserecords.com/store/UO/saturation.html">
           <Image
             src={Saturation}
             alt="Saturation 30th Anniversary"
@@ -30,7 +65,7 @@ export default function Home({}) {
               height: "auto",
             }}
           />
-        </a>
+        </ExternalLink>
       </div>
       <div className="max-w-screen-lg px-2 mx-auto my-6 text-center">
         <h2>HAPPY 30TH ANNIVERSARY TO SATURATION</h2>

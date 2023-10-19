@@ -21,7 +21,8 @@
     "react-scroll-parallax": "^3.4.2",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2",
-    "tailwind-hamburgers": "^1.0.2"
+    "tailwind-hamburgers": "^1.0.2",
+    "zuma-blocks": "^0.0.8"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
