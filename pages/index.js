@@ -17,7 +17,7 @@ export default function Home({}) {
         <title>Urge Overkill</title>
       </Head>
 
-      <Splash1 photo={"UO-PressPhoto2byJerodHerzog.jpeg"} />
+      <Splash1 photo={"UO-PressPhoto2byJerodHerzog_crop.png"} />
 
       <div>
         <ExternalLink href="https://store.touchandgorecords.com/products/urge-overkill-stull-10-red-vinyl">
